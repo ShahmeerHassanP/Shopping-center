@@ -10,7 +10,7 @@ export default function Checkout() {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-6">Your Cart Items</h1>
-      {items.length > 0 ? (
+      {items?.length > 0 ? (
         <div className="grid grid-cols-1 gap-6">
           <ul className="space-y-4">
             {items.map((item) => (

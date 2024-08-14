@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import Product from './pages/Product'
 import Productdetails from './pages/Productdetails'
 import Checkout from './pages/Checkout'
+import { Auth } from './components/auth'
+import { AddProduct } from './components/addProduct'
 
 function App() { 
   
@@ -18,6 +20,10 @@ function App() {
       <Route path='/' element={<Product/>} />
       <Route path='/ProductDetails' element={<Productdetails/>} />
       <Route path='/Checkout' element={<Checkout/>} />
+      <Route path='/Auth' element={<Auth/>}/>
+      <Route path='/Admin' element={<AddProduct/>}/>
+      
+      
     </Routes>
     
     </>
